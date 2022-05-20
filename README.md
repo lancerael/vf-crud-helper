@@ -1,5 +1,5 @@
 # vf-crud-helper
-An NPM NOde.js module for managing lists of items.
+A Node.js NPM module for managing lists of items.
 
 # actions
 
