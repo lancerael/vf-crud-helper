@@ -1,14 +1,10 @@
 import path from 'path'
 import fs from 'fs/promises'
+const __dirname = new URL('.', import.meta.url).pathname;
 
-process.on('uncaughtException', (error) => {
-  console.error(`Oops something went wrong: ${error}`)
-  process.exit(1)
-})
-
-export const getPath = (fileName) => {
+const getPath = (fileName) => {
   if (!fileName) throw 'Missing filename!'
-  return path.join('./', 'data', `${fileName}.csv`)
+  return path.join(__dirname, 'data', `${fileName}.csv`)
 }
 
 export const readFile = async (fileName) => {

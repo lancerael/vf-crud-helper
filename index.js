@@ -40,4 +40,4 @@ const actions = [
   deleteItems
 ]
 
-// console.log(await actions[process.argv[2]](process.argv[3], process.argv[4], process.argv[5]))
+console.log(await actions[process.argv[2]](process.argv[3], process.argv[4], process.argv[5]))
