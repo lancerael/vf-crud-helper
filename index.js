@@ -33,11 +33,11 @@ export const deleteItems = async (fileName, targetItem) => {
   return readFile(fileName)
 }
 
-const actions = [
-  createItems,
-  readItems,
-  updateItems,
-  deleteItems
-]
+// const actions = [
+//   createItems,
+//   readItems,
+//   updateItems,
+//   deleteItems
+// ]
 
-console.log(await actions[process.argv[2]](process.argv[3], process.argv[4], process.argv[5]))
+// console.log(await actions[process.argv[2]](process.argv[3], process.argv[4], process.argv[5]))
